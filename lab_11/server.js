@@ -17,8 +17,9 @@ app.post('/postform', function(req, res){
     res.send("Hi "+name+" I am sure you will "+quest) ;
 });
 
-app.use(express.urlencoded({extended:true}))
-
 app.get('/test', function(req, res){
     res.send("this is route 2");
    });
+
+app.use(express.urlencoded({extended:true}))
+
