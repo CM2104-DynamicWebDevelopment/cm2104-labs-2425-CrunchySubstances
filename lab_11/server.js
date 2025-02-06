@@ -53,6 +53,8 @@ app.get('/calc', function(req, res){
         res.send("X * Y = "+(x*y));
     }else if (operator == "div"){
         res.send("X / Y = "+(x/y));
+    }else {
+        res.send("Error: Invalid Operator");
     }
     
     });
