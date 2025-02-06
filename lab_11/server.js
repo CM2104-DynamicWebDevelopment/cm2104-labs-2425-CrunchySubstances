@@ -34,3 +34,9 @@ app.get('/joke', function(req, res){
     res.writeHead(200, {'Content-Type': "text/html"});
     res.end(randomJoke);
    });
+
+app.get('/add', function(req, res){
+    var x = req.query.x;
+    var y = req.query.y;
+     res.send("X + Y="+parseInt(x+y));
+    });
