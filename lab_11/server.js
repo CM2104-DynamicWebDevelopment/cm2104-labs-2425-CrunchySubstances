@@ -45,13 +45,13 @@ app.get('/calc', function(req, res){
     var x = parseInt(req.query.x);
     var y = parseInt(req.query.y);
     var operator = req.query.operator;
-    if (operator == add){
+    if (operator == "add"){
         res.send("X + Y= "+(x+y));
-    }elif (operator == sub);{
+    }elif (operator == "sub");{
         res.send("X - Y = "+(x-y));
-    }elif (operator == mult);{
+    }elif (operator == "mult");{
         res.send("X * Y = "+(x*y));
-    }elif (operator == div);{
+    }elif (operator == "div");{
         res.send("X / Y = "+(x/y));
     }
     
