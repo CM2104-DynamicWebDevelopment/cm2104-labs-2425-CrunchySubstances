@@ -47,11 +47,11 @@ app.get('/calc', function(req, res){
     var operator = req.query.operator;
     if (operator == "add"){
         res.send("X + Y= "+(x+y));
-    }elif (operator == "sub");{
+    }else if (operator == "sub"){
         res.send("X - Y = "+(x-y));
-    }elif (operator == "mult");{
+    }else if (operator == "mult"){
         res.send("X * Y = "+(x*y));
-    }elif (operator == "div");{
+    }else if (operator == "div"){
         res.send("X / Y = "+(x/y));
     }
     
