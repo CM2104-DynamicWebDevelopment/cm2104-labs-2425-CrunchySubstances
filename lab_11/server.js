@@ -61,3 +61,7 @@ app.get('/calc', function(req, res){
     }
     
     });
+
+app.use(function ( req, res, next) {
+    res.send("This page does not exist!")
+    })
